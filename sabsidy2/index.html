@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Second Game</title>
+    <script src="myjs.js"></script>
+    <link rel="stylesheet" type="text/css" href="myCss.css">
+</head>
+
+<body>
+    <div class="parent">
+            <img class="snake1" src="snake_4.png">
+            <img class="snake2" src="snake_3.png">
+            <img class="snake3" src="snake_3.png">
+            <img class="ladder1" src="ladder_brown.png">
+            <img class="ladder2" src="ladder.png">
+        <div class="grid-container1">
+            <h2 align="center" style="padding:20px">first-Player Score</h2>
+            <h1 align="center" style="padding:20px" id="firstScore">0</h1>
+            <img src="" style="display:none;margin:90px" id="firstDice" width="100" height="100">
+            <button id="firstButton" onclick="playerScore('first')" value="first"><img align="center" src="player1.png" width="100" height="100" ></button>
+        </div>
+
+        <div class="grid-container">
+                
+        </div>
+
+        <div class="grid-container1">
+                <h2 align="center" style="padding:20px">Second Player Score</h2>
+                <h1 align="center" style="padding:20px" id="secondScore">0</h1>
+                <img src="" style="display:none;margin:90px;" id="secondDice" width="100" height="100">
+                <button id="secondButton" onclick="playerScore('second')" style="cursor:not-Allowed" value="second"><img src="player2.jpeg" width="100" height="100" ></button>
+        </div>
+    </div>
+ <img src="" style="display:none" id="0" width="100" height="100">
+
+
+ <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <b><h2 id="congrates" align="center"></h2></b>
+        <button class="close" id="first11" onclick="start()">Play Game</button>
+        </div>
+    
+    </div>
+</body>
+
+</html>
