@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>My First Game</title>
+        <script src="myScript.js"></script>
+        <link rel="stylesheet" type="text/css" href="myCss.css">
+        <meta name="viewport" content="initial-scale=1">
+    </head>
+    <body>
+            <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <b><h2 id="congrates" align="center"></h2></b>
+                    <button class="close" id="first11" onclick="start()">Play Game</button>
+                    </div>
+                
+                </div>
+            <div class="grid-container">
+                    <div class="grid-item">
+                    <h2>First Player Score</h2>
+                    <div>
+                    <p id="firstScore">0</p>
+                    <h3>Your Turn</h3>
+                    <img src="dice-1.png" id="firstDice" width="100" height="100" style="display:none;margin-left:125px"/><br>
+                    <button onclick="playerScore('first')" class="button" id="firstButton" name="first" value="first">Play</button>
+                    </div>
+                    </div>
+
+                    <div class="grid-item firstdiv1">
+                                    <img src="sabsidi.jpeg" class="fishes"/>
+                                    <img src="dice1.jpeg" class="dice1" id="dice1" width="30" height="30"/>
+                                    <img src="dice2.jpeg" class="dice2" id="dice2" width="30" height="30"/>
+                            
+                    </div>
+
+
+                    <div class="grid-item">
+                            <h2>Second Player Score</h2>
+                            <p id="secondScore">0</p>
+
+                                <div>
+                                    <h3>Your Turn</h3>
+                                    <img src="dice-1.png" id="secondDice" width="100" height="100" style="display:none;margin-left:125px"/><br>
+                                    <button onclick="playerScore('second')" class="button" name="second" value="second" id="secondButton" style="cursor:not-allowed;">Play</button>
+                                </div>
+                    </div>  
+            </div>
+    </body>
+</html>
